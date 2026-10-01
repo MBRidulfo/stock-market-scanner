@@ -7,6 +7,7 @@ from tqdm import tqdm
 import pickle
 import os
 from multiprocessing import freeze_support
+from watchlist import load_watchlist
 
 
 CORE_COUNT = max(1, min(4, (os.cpu_count() or 2) // 2))  # Use half of available cores, but at least 1 and at most 4
@@ -59,7 +60,7 @@ def test_combo(sl, tp, hold_days, rsi_thresh, vol_mult):
 def main():
     CSV_FILE = "tickers.csv"
     print("📥 Fetching stock data for all tickers...")
-    from watchlist import load_watchlist
+    
     tickers = load_watchlist(CSV_FILE)
     cached_data = {}
 
