@@ -56,5 +56,5 @@ python optimize_strategy.py
 Set `TEST_MODE = False` to run the full parameter grid. The full optimization is computationally expensive and may take a significant amount of time.
 
 ## Status
-
+(Last Worked On: Sometime in 2024)
 Archived learning project. The strategy and backtesting code are experimental and should not be treated as financial advice or a validated trading system.
