@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.pyc
+.venv/
+venv/
+.env
+
+# Generated market data / outputs
+tickers.csv
+signal_log.csv
+backtest_results.csv
+backtest_results_analyzed.csv
+optimization_results.csv
+cached_data.pkl
